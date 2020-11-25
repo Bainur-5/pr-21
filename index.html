@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILDBERRIS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/jpeg;base64,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">
+<script src="https://use.fontawesome.com/ed06d06468.js"></script>
+</head>
+<body>
+    <header>
+        <div class="firsrt_nav">
+            <ul>
+                <li><a href="#">Бишкек</a></li>
+                <li><a href="#" class="black_link">Бесплатная доствака</a></li>
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#"> Сменить старну</a></li>
+            </ul>
+        </div>
+        <div class="second_nav">
+            <ol>
+                <li><a href="#"><i class="fa fa-bars"></i></a></i></li>
+                <li>
+                    <span>
+                        <a href="#">WILDBERRIS</a>
+                    </span>
+                </li>
+                <input type="search" value="search...">
+            </ol>
+            <ol class="width954">
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ol>
+            
+            <ul>
+                <li><a href="#"><i class="fa fa-map"></i>
+                Адрес</a></li>  
+                <li><a href="#"><i class="fa fa-user"></i>
+                Адрес</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i>
+                Адрес</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="center_main">
+            <div class="back_duble"></div>
+            <div class="hits">
+                <h1>Хиты продаж</h1>
+            </div>
+        </section>
+        <section class="products">
+            <div class="flex">
+                <div class="box">
+                    <img src="img/4545690.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/8888430.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/13724854.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/11127342.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/2147837.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/10847684.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/12920336.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/5223049.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/8329680.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/2147739.jpg" alt="">
+                    <div class="box_content">
+                            <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/6720420.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/8279056.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="two_feats">
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div>
+            <div class="flex">
+                <div class="box">
+                    <img src="img/6792770.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/10978789.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/10667312.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/10854001.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/7365023.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/10964684.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/8558201.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/12801485.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/6325002.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/11335671.jpg" alt="">
+                    <div class="box_content">
+                            <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/11329342.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/9022032.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="two_feats">
+                <div class="box3"></div>
+                <div class="box4"></div>
+            </div>
+            <div class="flex">
+                <div class="box">
+                    <img src="img2/10147914.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/10418057.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/10631633.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/10777445.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/11025573.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/11995755.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/12177780.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/12185902.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/12201986.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/13077064.jpg" alt="">
+                    <div class="box_content">
+                            <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/13233948.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/13256133.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/135314.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/2147835.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/2693038.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/3356320.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/5222709.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/5496934.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/7112780.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/7777436.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/7974488.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/8275224.jpg" alt="">
+                    <div class="box_content">
+                            <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/8329683.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img2/9000213.jpg" alt="">
+                    <div class="box_content">
+                        <h2>250сом<span><del style="color: grey">251</del></span></h2>
+                    </div>
+                </div>
+            </div>                
+        </section>
+        <section class="top_brend">
+            <div class="top_brend_text">
+                <div class="top_brend_text1">
+                    <h1>Популяные брернды</h1>
+                    <ol>
+                        <li><a href="#">Смотреть всё</a></li>
+                    </ol>
+                </div>
+                <div class="top_brend_text2">                    
+                        <a href="#">Женщины</a> 
+                        <a href="#">Мужчины</a> 
+                        <a href="#">Детям</a>   
+                        <a href="#">Обувь</a>   
+                        <a href="#">Аксеруры</a>    
+                        <a href="#">PREMIUM</a> 
+                        <a href="#">Спорт</a>   
+                        <a href="#">Игрушки</a>
+                        <a href="#">Красота</a>
+                </div>
+            </div>
+            <div class="logtip_brends">
+                <a href="#" class="logo_brends"><img src="img3/1031.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/14130.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/1418.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/14264.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/14278.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/15997.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/16490.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/16694.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/26819.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/29400.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/4077.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/461.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/561.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/61408.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/641.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/780.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/990.jpg" alt=""></a>
+                <a href="#" class="logo_brends"><img src="img3/1031.jpg" alt=""></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_text">
+            <ul>
+                <li class="footer_gg_text"><h3 href="#">Покупатель</h3></li>                    <li><a href="#">Как сделать заказ</a></li>
+                <li><a href="#">Способы оплаты</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Возврат товара</a></li>
+                <li><a href="#">Возврат денежных средств</a></li>
+                <li><a href="#">Правила продажи</a></li>
+                <li><a href="#">Правлиа пользоапния торговой</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+            </ul>
+        </div>
+        <div class="footer_text">
+            <ul>
+                <li class="footer_gg_text"><h3 href="#">Партнерам</р></li>
+                <li><a href="#">Партенрская программа</a></li>
+                <li><a href="#">Как начать сотрудничество</a></li>
+               <li><a href="#">Преимущество</a></li>
+           </ul>
+        </div>
+        <div class="footer_text">
+            <ul>
+                <li class="footer_gg_text"><h3 href="#">Компания</h3></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Реквезиты</a></li>
+                <li><a href="#">Пресс-центр</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer_text">
+            <ul>
+                <li class="footer_gg_text"><h3 href="#">Мы в соцетях</h3></li>
+                <li><a href="#">Вконтакте</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Однокласники</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Instagrm</a></li>
+            </ul>
+        </div>
+        <div class="footer_text">
+            <ul>
+                <li class="footer_gg_text"><h3 href="#">Мобильные устройство</h3></li>
+                <li><a href="#"><img src="img3/ru_badge_web_generic.png"></a></li>
+                <li><a href="#"><img src="img3/appstore.png"></a></li>
+                <li><a href="#"><img src="img3/AppGallery_DownlaodBadge_ENG.png"></a></li>
+                <li><a href="#">Перейти на <span>Мобильную вресию сайта</span></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html><a href="#"></a>

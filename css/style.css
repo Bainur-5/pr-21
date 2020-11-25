@@ -1,0 +1,373 @@
+body{
+    margin: 0;
+    padding: 0%;
+    transition: .5s;
+}
+header{
+    background: rgb(193,6,249);
+    background: linear-gradient(90deg, rgba(193,6,249,1) 55%, rgba(98,0,255,1) 95%);
+    height: 200px;
+}
+.firsrt_nav ul{
+    display: inline-flex;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+.firsrt_nav ul li{
+    margin: 0 20px;
+}
+.firsrt_nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.firsrt_nav ul li .black_link{
+    background-color: rgba(255, 255, 255, .3);
+    padding: 6px 6px;
+    border-radius: 15px;
+}
+.firsrt_nav ul li a:hover{
+    color: lightcyan;
+}
+/*  */
+.second_nav{
+    width: 100%;
+}
+.second_nav ol{
+    display: inline-flex;
+    list-style: none;
+    width: auto;
+}
+.second_nav ol li{
+    margin: 0 20px;
+}
+.second_nav ol li a{
+    text-decoration: none; 
+    color: white;
+    font-size: 35px;
+}
+.second_nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+.second_nav ul li{
+    margin: 0 20px;
+    margin-left: auto;
+}
+.second_nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.second_nav ol input{
+    width: 100%;
+    padding: 15px 0;
+    border: 0;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 20px;
+    padding-left: 10px;
+    color: white;
+    outline: 0;
+}
+.second_nav ol li span {
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+}
+.width954{
+    width: 0;
+}.width954 li i{
+    font-size: 0;
+}
+/*  */
+main{
+    width: 100%;
+    background: white;
+    height: auto;
+    border-radius: 30px;
+    margin-top: -30px;
+}
+.center_main{
+    width: auto;
+    margin: 0 auto;
+    padding: 25px;
+}
+.back_duble{
+    height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    background: url('../img/big_sd_prod_14.jpg') center/cover no-repeat;
+}
+.hits{
+    margin-top: 50px;
+    font-size: 25px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box{
+    margin: 20px 20px;
+}
+/*  */
+.two_feats{
+    display: flex;
+}
+.two_feats div{
+    margin: 0 20px;
+    height: 250px;
+    border-radius: 20px;
+    width: 50%;
+}
+.box1{
+    background: url('../img/main_pepe_jeans_14112020.jpg') center/cover no-repeat;
+    height: 250px;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.box2{
+    background: url('../img/009763647.jpg') center/cover no-repeat;
+    height: 250px;
+    border-radius: 20px;
+    width: 50%;
+}
+.box3{
+    background: url('../img/704x252_vibor_women.jpg') center/cover no-repeat;
+    height: 250px;
+    border-radius: 20px;
+    width: 50%;
+}
+.box4{
+    background: url('../img/main_poloska_prem_acs.jpg') center/cover no-repeat;
+    height: 250px;
+    border-radius: 20px;
+    width: 50%;
+}
+/*  */
+.top_brend{
+    width: auto;
+    margin: 0 auto;
+    padding: 25px;
+}
+.top_brend_text{
+    width: 100%;
+}
+.top_brend_text1{
+    display: flex;
+    font-size:  25px;
+}
+.top_brend_text1 ol{
+    list-style: none;
+}
+.top_brend_text1 ol li{
+    align-items: center;
+    margin: 12px 0;
+}
+.top_brend_text1 ol li a{
+    color: #cb11ab;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 70%;
+}
+.top_brend_text1 ol li a:hover{
+    text-decoration: underline;
+}
+.top_brend_text2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.top_brend_text2 a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 50px;
+}
+.top_brend_text2 a:hover{
+    color: #cb11ab;
+    border: 1px solid #cb11ab;    
+}
+/*  */
+.logtip_brends{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo_brends{
+    margin: 5px 5px;
+}
+footer{
+    display: flex;
+    background-color: #481173;
+}
+.footer_text{
+    width: 20%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer_text ul{
+    list-style: none;
+}
+.footer_text ul li{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.footer_text ul h3{
+    color: white;
+}
+.footer_text ul li a{
+    color: rgba( 255, 255, 255, .5);
+    text-decoration: none;
+    transition: .5s;
+}
+.footer_text ul li a:hover{
+    color: white;
+}
+.footer_text ul li a img{
+    width: 100%;
+    padding: 0;
+}
+.footer_text ul li a span{
+    text-decoration: underline;
+}
+/*  */
+@media screen and (max-width:954px){
+    .second_nav ul{
+        font-size: 0;
+        position: absolute;
+        margin-left: -1200px;
+    }
+    .width954{
+        width: auto;
+        left: auto;
+        top: 13%;
+    }
+    .width954 li a i{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:860px){
+    .two_feats{
+        flex-direction: column;
+        padding: 25px;
+    }    
+    .two_feats div{
+        width: auto;
+        margin: 10px 0;
+        
+    }
+}
+@media screen and (max-width:829px){
+    .footer_text ul li h3{
+        font-size: 15px;
+    }
+    .footer_text ul li a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:703px){
+    .second_nav ol li a{
+        font-size: 20px;
+    }
+    .second_nav ol{
+        width: auto;
+    }
+    .second_nav ol input{
+        width: 100%;
+        padding: 5px auto;
+    }
+    .second_nav ol li a i{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:626px){
+    .firsrt_nav ul li{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:603px){
+    .footer_text ul li h3{
+        font-size: 50%;
+    }
+
+}
+@media screen and (max-width:553px){
+    
+    .center_main{
+        padding: 15px;
+    }
+    .second_nav ol li a{
+        font-size: 100%;
+    }
+    .width954{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .second_nav ol li a {
+        font-size: 100%;
+    }
+    /*  */
+    .footer_text ul li{
+        margin: 1px 0;
+    }
+    .footer_text ul li a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:546px){
+    header{
+        height: 250px;
+        position: relative;
+    }
+    .second_nav ol input{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+    }
+    .footer_text{
+        width: 18%;
+    }
+
+}
+@media screen and (max-width:467px){
+    .footer_text ul li h3{
+        font-size: 40%;
+    }
+    .footer_text ul li{
+        margin: 0;
+        width: 100%;
+    }
+    .footer_text ul li a{
+        font-size: 35%;
+        margin: 0;
+    }
+}
+@media screen and (max-width:394px){
+    .footer_text ul li h3{
+        font-size: 30%;
+    }
+}
+@media screen and (max-width:347px){
+    .second_nav ol{
+        width:auto;
+    }
+    .second_nav ol li{
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width:345px){
+    .top_brend_text1 h1{
+        font-size: 100%;
+    }
+    .top_brend_text1 ol li a{
+        font-size: 50%;
+    }
+    .top_brend_text1 ol li{
+        margin: 0;
+    }
+}
