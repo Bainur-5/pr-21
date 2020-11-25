@@ -375,7 +375,13 @@ footer{
     .top_brend_text1 h1{
         font-size: 100%;
     }
+    .second_nav ol{
+        margin-bottom:500px;
+    }
     .second_nav li span a{
         font-size: 90%;
+    }
+    header{
+        height: 300px;
     }
 }
