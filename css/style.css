@@ -371,3 +371,11 @@ footer{
         margin: 0;
     }
 }
+@media screen and (max-width:361px){
+    .top_brend_text1 h1{
+        font-size: 100%;
+    }
+    .second_nav li span a{
+        font-size: 90%;
+    }
+}
