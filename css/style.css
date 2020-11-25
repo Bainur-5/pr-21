@@ -320,7 +320,7 @@ footer{
 }
 @media screen and (max-width:546px){
     header{
-        height: 250px;
+        height: 300px;
         position: relative;
     }
     .second_nav ol input{
@@ -380,8 +380,5 @@ footer{
     }
     .second_nav li span a{
         font-size: 90%;
-    }
-    header{
-        height: 300px;
     }
 }
